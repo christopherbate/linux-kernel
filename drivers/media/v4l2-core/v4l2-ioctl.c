@@ -1260,6 +1260,16 @@ static void v4l_fill_fmtdesc(struct v4l2_fmtdesc *fmt)
 	case V4L2_META_FMT_RK_ISP1_PARAMS:	descr = "Rockchip ISP1 3A params"; break;
 	case V4L2_META_FMT_RK_ISP1_STAT_3A:	descr = "Rockchip ISP1 3A statistics"; break;
 	case V4L2_META_FMT_UVC:		descr = "UVC payload header metadata"; break;
+	case V4L2_PIX_FMT_Y8I:		descr = "8-bit Greyscale L/R interleaved"; break;
+	case V4L2_PIX_FMT_Y12I:		descr = "12-bit Grey L/R interleaved"; break;
+	case V4L2_PIX_FMT_Z16:		descr = "16-bit Depth data"; break;
+	case V4L2_PIX_FMT_RW16:		descr = "16-bit Raw data"; break;
+	case V4L2_PIX_FMT_INZI:		descr = "32-bit IR:Depth 10:16"; break;
+	case V4L2_PIX_FMT_W10:		descr = "10-bit packed 8888[2222]"; break;
+	case V4L2_PIX_FMT_CONFIDENCE_MAP:	descr = "4-bit per pixel packed"; break;
+	case V4L2_PIX_FMT_FG:		descr = "Frame Grabber (FG  )"; break;
+	case V4L2_PIX_FMT_INZC:		descr = "Planar Depth/Confidence (INZC)"; break;
+	case V4L2_PIX_FMT_PAIR:		descr = "Relative IR (PAIR)"; break;
 
 	default:
 		/* Compressed formats */
