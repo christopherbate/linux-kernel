@@ -192,7 +192,11 @@
  * Driver specific constants.
  */
 
-#define DRIVER_VERSION		"1.1.1"
+#ifndef DRIVER_VERSION_SUFFIX
+#define DRIVER_VERSION_SUFFIX
+#endif
+
+#define DRIVER_VERSION		"1.1.1" DRIVER_VERSION_SUFFIX
 
 /* Number of isochronous URBs. */
 #define UVC_URBS		5
