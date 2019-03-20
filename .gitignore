@@ -31,7 +31,7 @@
 *.xz
 *.lz4
 *.lzo
-*.patch
+#*.patch
 *.gcno
 *.ll
 modules.builtin
@@ -113,7 +113,7 @@ signing_key.x509
 x509.genkey
 
 # Kconfig presets
-all.config
+#all.config
 
 # Kdevelop4
 *.kdev4
